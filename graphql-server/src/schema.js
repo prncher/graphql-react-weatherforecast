@@ -1,0 +1,4 @@
+"use strict";
+exports.__esModule = true;
+exports.schema = void 0;
+exports.schema = "type ProbabilityOfPrecipitation {\n        unitCode: String!\n        value: Int\n    }\n\n    type Period {\n        number: Int! \n        name: String!\n        startTime: String!\n        endTime: String!\n        isDaytime: Boolean! \n        temperature: Int!\n        temperatureUnit: String!\n        temperatureTrend: String!\n        probabilityOfPrecipitation: ProbabilityOfPrecipitation!\n        windSpeed: String!\n        windDirection: String!\n        icon: String!\n        shortForecast: String!\n        detailedForecast: String!\n    }\n    \n    type Address {\n        street: String!\n        city: String!\n        state:String!\n    }\n\n    type Query {\n        periods(street: String!, city: String!, state: String!): [Period]\n    }\n    ";

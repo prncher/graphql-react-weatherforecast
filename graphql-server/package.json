@@ -1,0 +1,31 @@
+{
+  "name": "graphql-node-server",
+  "version": "1.0.0",
+  "description": "An express nodejs server for graphql",
+  "main": "server.js",
+  "scripts": {
+    "server": "tsc && node ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graphql",
+    "express",
+    "graphql-http"
+  ],
+  "author": "Prince Cheruvathur",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@apollo/subgraph": "^2.9.3",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
+    "memcached": "^2.2.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/memcached": "^2.2.10",
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3"
+  }
+}
